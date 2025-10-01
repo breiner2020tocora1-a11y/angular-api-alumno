@@ -1,0 +1,27 @@
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.alumno-card {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.alumno-card p {
+  margin: 8px 0;
+  font-size: 15px;
+  color: #555;
+}
+
+.alumno-card strong {
+  color: #222;
+}

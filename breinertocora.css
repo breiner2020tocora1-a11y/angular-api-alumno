@@ -1,0 +1,190 @@
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #f4f4f4;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0f2027;
+  color: #fff;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 15px;
+  margin: 0;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00d4ff;
+}
+
+#sobre-mi {
+  padding: 120px 20px 40px;
+}
+
+.contenedor-sobre-mi {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contenedor-sobre-mi img {
+  width: 220px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #00d4ff;
+  border: 4px solid #00d4ff;
+}
+
+
+#proyectos {
+  padding: 60px 20px;
+  background: #16222a;
+}
+
+#proyectos h2 {
+  text-align: center;
+  font-size: 2.2em;
+  margin-bottom: 30px;
+}
+
+.tarjeta {
+  width: 280px;
+  background-color: #243b55;
+  color: #fff;
+  margin: 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #000;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  padding-bottom: 15px;
+}
+
+.tarjeta:hover {
+  transform: scale(1.03);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: auto;
+}
+
+
+#habilidades, #agenda {
+  padding: 60px 20px;
+  background: #0f2027;
+}
+
+table {
+  width: 95%;
+  margin: auto;
+  border-collapse: collapse;
+  border: 2px solid #00d4ff;
+  background: #203a43;
+  color: #fff;
+}
+
+thead {
+  background-color: #00d4ff;
+  color: #000;
+}
+
+th, td {
+  border: 1px solid #00d4ff;
+  padding: 12px;
+  text-align: center;
+}
+
+
+#contacto {
+  padding: 60px 20px;
+  background: #2c5364;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+}
+
+form input, form select, form textarea {
+  margin: 12px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #f4f4f4;
+  color: #000;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+form button {
+  padding: 12px;
+  background: #00d4ff;
+  color: #000;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #03a9f4;
+}
+
+
+footer {
+  background: #111;
+  color: #eee;
+  text-align: center;
+  padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedor-sobre-mi {
+    flex-direction: column;
+  }
+
+  .tarjeta {
+    width: 90%;
+  }
+
+  form {
+    width: 90%;
+  }
+}
+
+
+@keyframes entrada {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
