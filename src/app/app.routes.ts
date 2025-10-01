@@ -4,9 +4,12 @@ import { Login } from './login/login';
 import { ApiComponent } from './api/api.component';
 
 export const routes: Routes = [
-
   { path: '', redirectTo: 'alumno/123/juan', pathMatch: 'full' },
-  { path: 'alumno/:id/:nombre', component: Alumno },
+  { 
+    path: 'alumno/:id/:nombre', 
+    component: Alumno,
+    data: { renderMode: 'client' }  
+  },
   { path: 'login', component: Login },
   { path: 'api', component: ApiComponent },
   { path: '**', redirectTo: 'alumno/123/juan' }
